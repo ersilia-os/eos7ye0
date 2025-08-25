@@ -1,0 +1,4 @@
+colloidal_aggregator,fluc_inhibitor,blue_fluorescence,green_fluorescence,reactive,promiscuous,other_assay_interference,alarm_nmr_rule,bms_rule,chelator_rule,gst_fhs_rule,his_fhs_rule,luciferace_inhibitor_rule,ntd_rule,pains_rule,potential_electrophilic_rule,lilly_medchem_rule
+0.0,0.007,0.005,0.015,0.993,0.875,0.994,1,0,0,0,0,0,1,0,1,0
+0.198,0.914,0.997,0.859,0.079,0.019,0.973,2,0,0,0,0,0,1,0,0,0
+0.011,0.036,0.004,0.426,0.612,0.033,0.478,0,0,0,0,0,0,0,0,0,0

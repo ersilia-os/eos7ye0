@@ -1,1 +1,18 @@
 name,type,direction,description
+colloidal_aggregator,float,high,Probability score of being aggregators
+fluc_inhibitor,float,high,Probability score of being a Firefly luciferase (FLuc) inhibitor
+blue_fluorescence,float,high,Probability score of being flue fluorescent
+green_fluorescence,float,high,Probability score of being green fluorescent
+reactive,float,high,Probability score of being a reactive compound
+promiscuous,floag,high,Probability score of being a promiscuous compound
+other_assay_interference,float,high,Probability score of causing an assay intererence
+alarm_nmr_rule,integer,high,Thiol reactive compounds based on 75 substructures
+bms_rule,integer,high,Undesirable reactive compounds based on 176 substructures
+chelator_rule,integer,high,Chelators based on 55 substructures
+gst_fhs_rule,integer,high,Glutathione (GSH) and glutathione-S-transferase (GST) related frequent hitter mechanisms based on 34 substructures
+his_fhs_rule,integer,high,Ni2+ chelators based on 19 substructures
+luciferace_inhibitor_rule,integer,high,FLuc inhibitors based on 3 substructures
+ntd_rule,integer,high,Unwanted or reactive groups and possible HTS interferences based on 105 substructures
+pains_rule,integer,high,Frequent hitters or alpha-screen artifacts and reactive compounds based on 408 substructures
+potential_electrophilic_rule,integer,high,Reactive compounds based on 119 substructures
+lilly_medchem_rule,integer,high,Inteference with biological assays based on 273 substructures
