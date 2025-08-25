@@ -4,7 +4,7 @@ fluc_inhibitor,float,high,Probability score of being a Firefly luciferase (FLuc)
 blue_fluorescence,float,high,Probability score of being flue fluorescent
 green_fluorescence,float,high,Probability score of being green fluorescent
 reactive,float,high,Probability score of being a reactive compound
-promiscuous,floag,high,Probability score of being a promiscuous compound
+promiscuous,float,high,Probability score of being a promiscuous compound
 other_assay_interference,float,high,Probability score of causing an assay intererence
 alarm_nmr_rule,integer,high,Thiol reactive compounds based on 75 substructures
 bms_rule,integer,high,Undesirable reactive compounds based on 176 substructures
