@@ -5,7 +5,7 @@ commands:
     - ["pip", "chemprop", "1.6.1"]
     - ["pip", "numpy", "1.26.4"]
     - ["pip", "django-cors-headers", "4.7.0"]
-    - ["pip", "pycairo", "1.28.0"]
+    - ["conda", "pycairo", "1.28.0", "conda-forge"]
     - ["pip", "django-ninja", "1.4.3"]
     - ["pip", "reportlab", "4.4.3"]
     - ["conda", "pkg-config", "0.29.2", "conda-forge"]
@@ -14,4 +14,3 @@ commands:
     - ["conda", "cairosvg", "2.8.2", "conda-forge"]
     - ["pip", "torch", "2.5.1"]
     - ["pip", "git+https://github.com/bp-kelley/descriptastorus.git@9a190343bcd3cfd35142d378d952613bcac40797"]
-    
