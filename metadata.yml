@@ -21,10 +21,7 @@ Output:
 - Score
 Output Dimension: 17
 Output Consistency: Fixed
-Interpretation: 'Probability scores range from 0 to 1, with higher values indicating a greater
-  likelihood of being a frequent hitter. A threshold of 0.5 is commonly used to classify
-  compounds as frequent hitters (scores >= 0.5) or non-frequent hitters (scores < 0.5). Rule based columns
-  count various structural alerts and filters that can help identify potential frequent hitters based on their chemical features.'
+Interpretation: 'Probability scores range from 0 to 1, with higher values indicating a greater likelihood of being a frequent hitter. A threshold of 0.5 is commonly used to classify compounds as frequent hitters (scores >= 0.5) or non-frequent hitters (scores < 0.5).'
 Tag:
 - Frequent hitter
 Biomedical Area:
