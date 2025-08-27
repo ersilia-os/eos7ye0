@@ -5,39 +5,30 @@ Title: ChemFH chemical frequent hitter detection
 Description: ChemFH is an integrated model for the detection of frequent hitters in
   chemical screening across various parameters, including colloidal aggregates, firefly
   luciferase reporter enzyme inhibition, fluorescence, chemical reactivity, and promiscuity,
-  as well as classical PAINS alerts and others.
+  as well as classical PAINS alerts and others. ChemFH contains ChemProp models as well as
+  rule-based filters based on liable substructures.
 Deployment:
 - Local
-- Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection,
-  Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Property calculation or prediction
 Input:
 - Compound
 Input Dimension: 1
 Output:
 - Value
 - Score
-- Compound
-- Probability
-- Experimental value
-- '...'
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: 'The output of this template model should be interpreted like this.
-
-  '
+Output Dimension: 17
+Output Consistency: Fixed
+Interpretation: 'Probability scores range from 0 to 1, with higher values indicating a greater likelihood of being a frequent hitter. A threshold of 0.5 is commonly used to classify compounds as frequent hitters (scores >= 0.5) or non-frequent hitters (scores < 0.5).'
 Tag:
-- Solubility
+- Frequent hitter
 Biomedical Area:
-- Biomedical Area 1
-- Biomedical Area 2
+- Any
 Target Organism:
-- Target Organism 1
-- Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+- Any
+Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://academic.oup.com/nar/article/52/W1/W439/7680615
 Source Code: https://github.com/antwiser/ChemFH

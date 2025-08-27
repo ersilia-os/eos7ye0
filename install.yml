@@ -1,4 +1,16 @@
 python: "3.10"
 commands:
-    - ["pip", "rdkit-pypi", "2022.3.1b1"]
-    - ["conda", "pandas", "1.3.5", "default"]
+    - ["pip", "rdkit", "2023.9.4"]
+    - ["pip", "django", "5.2.5"]
+    - ["pip", "chemprop", "1.6.1"]
+    - ["pip", "numpy", "1.26.4"]
+    - ["pip", "django-cors-headers", "4.7.0"]
+    - ["conda", "pycairo", "1.28.0", "conda-forge"]
+    - ["pip", "django-ninja", "1.4.3"]
+    - ["pip", "reportlab", "4.4.3"]
+    - ["conda", "pkg-config", "0.29.2", "conda-forge"]
+    - ["conda", "meson", "1.9.0", "conda-forge"]
+    - ["conda", "cmake", "4.1.0", "conda-forge"]
+    - ["conda", "cairosvg", "2.8.2", "conda-forge"]
+    - ["pip", "torch", "2.5.1"]
+    - ["pip", "git+https://github.com/bp-kelley/descriptastorus.git@9a190343bcd3cfd35142d378d952613bcac40797"]
