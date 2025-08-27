@@ -2,6 +2,7 @@
 
 ChemFH is an integrated model for the detection of frequent hitters in chemical screening across various parameters, including colloidal aggregates, firefly luciferase reporter enzyme inhibition, fluorescence, chemical reactivity, and promiscuity, as well as classical PAINS alerts and others. ChemFH contains ChemProp models as well as rule-based filters based on liable substructures.
 
+This model was incorporated on 2025-08-23.
 
 
 ## Information
@@ -43,8 +44,11 @@ _10 of 17 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7ye0.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7ye0.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `298`
+- **Environment Size (Mb):** `6699`
 
 
 ### References
