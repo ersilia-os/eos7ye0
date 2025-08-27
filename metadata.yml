@@ -2,34 +2,39 @@ Identifier: eos7ye0
 Slug: chemfh
 Status: In progress
 Title: ChemFH chemical frequent hitter detection
-Description: ChemFH is an integrated model for the detection of frequent hitters in
-  chemical screening across various parameters, including colloidal aggregates, firefly
-  luciferase reporter enzyme inhibition, fluorescence, chemical reactivity, and promiscuity,
-  as well as classical PAINS alerts and others. ChemFH contains ChemProp models as well as
-  rule-based filters based on liable substructures.
+Description: ChemFH is an integrated model for the detection of frequent hitters
+  in chemical screening across various parameters, including colloidal 
+  aggregates, firefly luciferase reporter enzyme inhibition, fluorescence, 
+  chemical reactivity, and promiscuity, as well as classical PAINS alerts and 
+  others. ChemFH contains ChemProp models as well as rule-based filters based on
+  liable substructures.
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: External
 Task: Annotation
 Subtask: Property calculation or prediction
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Value
-- Score
+  - Value
+  - Score
 Output Dimension: 17
 Output Consistency: Fixed
-Interpretation: 'Probability scores range from 0 to 1, with higher values indicating a greater likelihood of being a frequent hitter. A threshold of 0.5 is commonly used to classify compounds as frequent hitters (scores >= 0.5) or non-frequent hitters (scores < 0.5).'
+Interpretation: Probability scores range from 0 to 1, with higher values 
+  indicating a greater likelihood of being a frequent hitter. A threshold of 0.5
+  is commonly used to classify compounds as frequent hitters (scores >= 0.5) or 
+  non-frequent hitters (scores < 0.5).
 Tag:
-- Frequent hitter
+  - Frequent hitter
 Biomedical Area:
-- Any
+  - Any
 Target Organism:
-- Any
+  - Any
 Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://academic.oup.com/nar/article/52/W1/W439/7680615
 Source Code: https://github.com/antwiser/ChemFH
 License: MIT
+Incorporation Date: '2025-08-23'
