@@ -1,6 +1,6 @@
 Identifier: eos7ye0
 Slug: chemfh
-Status: In progress
+Status: Ready
 Title: ChemFH chemical frequent hitter detection
 Description: ChemFH is an integrated model for the detection of frequent hitters
   in chemical screening across various parameters, including colloidal 
@@ -38,6 +38,18 @@ Publication: https://academic.oup.com/nar/article/52/W1/W439/7680615
 Source Code: https://github.com/antwiser/ChemFH
 License: MIT
 Incorporation Date: '2025-08-23'
+Last Packaging Date: '2025-08-28'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7ye0.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos7ye0
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 298.0
 Environment Size: 1926.0
+Image Size: 2126.53
+Computational Performance 1: 44.89
+Computational Performance 2: 36.3
+Computational Performance 3: 50.24
+Computational Performance 4: 360.23
+Computational Performance 5: 1762.33
