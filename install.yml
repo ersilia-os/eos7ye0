@@ -1,5 +1,6 @@
 python: "3.10"
 commands:
+    - ["pip", "torch", "2.5.1+cpu", "--index-url", "https://download.pytorch.org/whl/cpu"]
     - ["pip", "rdkit", "2023.9.4"]
     - ["pip", "django", "5.2.5"]
     - ["pip", "chemprop", "1.6.1"]
@@ -12,5 +13,4 @@ commands:
     - ["conda", "meson", "1.9.0", "conda-forge"]
     - ["conda", "cmake", "4.1.0", "conda-forge"]
     - ["conda", "cairosvg", "2.8.2", "conda-forge"]
-    - ["pip", "torch", "2.5.1"]
     - ["pip", "git+https://github.com/bp-kelley/descriptastorus.git@9a190343bcd3cfd35142d378d952613bcac40797"]
