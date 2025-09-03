@@ -2,7 +2,7 @@
 
 ChemFH is an integrated model for the detection of frequent hitters in chemical screening across various parameters, including colloidal aggregates, firefly luciferase reporter enzyme inhibition, fluorescence, chemical reactivity, and promiscuity, as well as classical PAINS alerts and others. ChemFH contains ChemProp models as well as rule-based filters based on liable substructures.
 
-This model was incorporated on 2025-08-23.Last packaged on 2025-08-28.
+This model was incorporated on 2025-08-23.Last packaged on 2025-09-03.
 
 ## Information
 ### Identifiers
@@ -44,18 +44,18 @@ _10 of 17 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7ye0](https://hub.docker.com/r/ersiliaos/eos7ye0)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7ye0.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7ye0.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `298`
 - **Environment Size (Mb):** `1926`
-- **Image Size (Mb):** `2126.53`
+- **Image Size (Mb):** `2127.19`
 
 **Computational Performance (seconds):**
-- 10 inputs: `44.89`
-- 100 inputs: `50.24`
-- 10000 inputs: `1762.33`
+- 10 inputs: `45.32`
+- 100 inputs: `51.22`
+- 10000 inputs: `1788.84`
 
 ### References
 - **Source Code**: [https://github.com/antwiser/ChemFH](https://github.com/antwiser/ChemFH)
