@@ -59,7 +59,7 @@ _10 of 17 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/antwiser/ChemFH](https://github.com/antwiser/ChemFH)
-- **Publication**: [https://academic.oup.com/nar/article/52/W1/W439/7680615](https://academic.oup.com/nar/article/52/W1/W439/7680615)
+- **Publication**: [https://doi.org/10.1093/nar/gkae495](https://doi.org/10.1093/nar/gkae495)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2025`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
