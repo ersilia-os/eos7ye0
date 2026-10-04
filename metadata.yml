@@ -2,12 +2,13 @@ Identifier: eos7ye0
 Slug: chemfh
 Status: Ready
 Title: ChemFH chemical frequent hitter detection
-Description: ChemFH is an integrated model for the detection of frequent hitters
-  in chemical screening across various parameters, including colloidal 
-  aggregates, firefly luciferase reporter enzyme inhibition, fluorescence, 
-  chemical reactivity, and promiscuity, as well as classical PAINS alerts and 
-  others. ChemFH contains ChemProp models as well as rule-based filters based on
-  liable substructures.
+Description: Screens a compound for the behaviours that generate false positives in
+  biochemical assays, covering colloidal aggregation, luciferase inhibition, fluorescence
+  interference, reactivity and promiscuous binding across seventeen readouts. ChemFH
+  assembles curated frequent-hitter data behind a single interface so that suspect
+  compounds can be set aside before resources are spent chasing them. A flag indicates
+  a recognised interference mechanism, not that a measured activity is necessarily
+  spurious.
 Deployment:
   - Local
 Source: Local
@@ -22,10 +23,8 @@ Output:
   - Score
 Output Dimension: 17
 Output Consistency: Fixed
-Interpretation: Probability scores range from 0 to 1, with higher values 
-  indicating a greater likelihood of being a frequent hitter. A threshold of 0.5
-  is commonly used to classify compounds as frequent hitters (scores >= 0.5) or 
-  non-frequent hitters (scores < 0.5).
+Interpretation: Probabilities of frequent-hitter behaviour across seventeen assay
+  interference mechanisms.
 Tag:
   - Frequent hitter
 Biomedical Area:
