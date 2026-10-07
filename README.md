@@ -1,6 +1,6 @@
 # ChemFH chemical frequent hitter detection
 
-Screens a compound for the behaviours that generate false positives in biochemical assays, covering colloidal aggregation, luciferase inhibition, fluorescence interference, reactivity and promiscuous binding across seventeen readouts. ChemFH assembles curated frequent-hitter data behind a single interface so that suspect compounds can be set aside before resources are spent chasing them. A flag indicates a recognised interference mechanism, not that a measured activity is necessarily spurious.
+Screens a compound for the behaviours that manufacture false positives in biochemical assays, returning learned predictions for colloidal aggregation, firefly luciferase inhibition, blue and green fluorescence, reactivity, promiscuity and residual assay interference, alongside hits against ten classical substructure filters including PAINS, BMS and Lilly MedChem. Shi and colleagues trained multi-task directed message-passing networks on 823,391 compounds, averaging an AUC of 0.91. A flag marks a known interference mechanism, not a spurious result.
 
 This model was incorporated on 2025-08-23.Last packaged on 2026-07-06.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-08-23.Last packaged on 2026-07-06.
 ### Output
 - **Output Dimension:** `17`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probabilities of frequent-hitter behaviour across seventeen assay interference mechanisms.
+- **Interpretation:** Seven probabilities of frequent-hitter mechanisms, suspect above 0.5, plus alert counts for ten substructure rules.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
