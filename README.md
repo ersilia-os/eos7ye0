@@ -2,7 +2,8 @@
 
 Screens a compound for the behaviours that manufacture false positives in biochemical assays, returning learned predictions for colloidal aggregation, firefly luciferase inhibition, blue and green fluorescence, reactivity, promiscuity and residual assay interference, alongside hits against ten classical substructure filters including PAINS, BMS and Lilly MedChem. Shi and colleagues trained multi-task directed message-passing networks on 823,391 compounds, averaging an AUC of 0.91. A flag marks a known interference mechanism, not a spurious result.
 
-This model was incorporated on 2025-08-23.Last packaged on 2026-07-06.
+This model was incorporated on 2025-08-23.
+Last packaged on 2026-07-06.
 
 ## Information
 ### Identifiers
