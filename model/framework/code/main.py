@@ -56,20 +56,18 @@ ALL_RULE = [
 
 
 def chemfh_infer(smiles_input):
-    if isinstance(smiles_input, str):
-        original_smiles = [smiles_input]
-    else:
-        original_smiles = list(smiles_input)
-
-    smiles_list, invalidIdx = wash_input_mol(
+    """Return one record per input SMILES, or None where RDKit cannot read it."""
+    smiles_list, is_valid = wash_input_mol(
         smiles_input,
         issmiles=True,
         invalidStr="invalid",
         returnInvalidIdx=True,
     )
 
-    if True not in invalidIdx:
-        raise RuntimeError("invalid molecule!")
+    # An invalid SMILES gives an empty output row; a batch with no valid SMILES
+    # must not stop the whole run.
+    if True not in is_valid:
+        return [None] * len(is_valid)
     if len(smiles_list) > 5000:
         raise RuntimeError("Excessive number of requested molecules!")
 
@@ -85,15 +83,8 @@ def chemfh_infer(smiles_input):
     result = pd.concat([result, unResult, out4], axis=1)
     result = pd.concat([pd.DataFrame(smiles_list, columns=["smiles"]), result], axis=1)
 
-    for idx, flag in enumerate(invalidIdx):
-        if not flag:
-            new_row = pd.DataFrame([{
-                col: ("Invalid Molecule" if col != "smiles" else original_smiles[idx])
-                for col in result.columns
-            }])
-            result = pd.concat([result.iloc[:idx], new_row, result.iloc[idx:]]).reset_index(drop=True)
-
-    return result.to_dict(orient="records")
+    records = iter(result.to_dict(orient="records"))
+    return [next(records) if valid else None for valid in is_valid]
 
 
 def main():
@@ -115,8 +106,6 @@ def main():
         smiles_list = [r[0] for r in reader if r]
 
     logger.info("smiles loaded: %d", len(smiles_list))
-    if not smiles_list:
-        raise RuntimeError("no smiles found in input")
 
     data = []
     batch_size = 50
@@ -171,6 +160,9 @@ def main():
 
     R = []
     for idx, d in enumerate(data):
+        if d is None:
+            R.append([""] * len(header))
+            continue
         try:
             r = [d[c] for c in columns_0]
             for c in columns_1:
