@@ -3,7 +3,7 @@
 Screens a compound for the behaviours that manufacture false positives in biochemical assays, returning learned predictions for colloidal aggregation, firefly luciferase inhibition, blue and green fluorescence, reactivity, promiscuity and residual assay interference, alongside hits against ten classical substructure filters including PAINS, BMS and Lilly MedChem. Shi and colleagues trained multi-task directed message-passing networks on 823,391 compounds, averaging an AUC of 0.91. A flag marks a known interference mechanism, not a spurious result.
 
 This model was incorporated on 2025-08-23.
-Last packaged on 2026-07-06.
+Last packaged on 2026-11-20.
 
 ## Information
 ### Identifiers
@@ -45,18 +45,18 @@ _10 of 17 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7ye0](https://hub.docker.com/r/ersiliaos/eos7ye0)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7ye0.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7ye0.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `105`
 - **Environment Size (Mb):** `1936`
-- **Image Size (Mb):** `2149.39`
+- **Image Size (Mb):** `628.6`
 
 **Computational Performance (seconds):**
-- 10 inputs: `32.91`
-- 100 inputs: `36.35`
-- 10000 inputs: `923.07`
+- 10 inputs: `30.47`
+- 100 inputs: `42.51`
+- 10000 inputs: `1213.56`
 
 ### References
 - **Source Code**: [https://github.com/antwiser/ChemFH](https://github.com/antwiser/ChemFH)
